@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let mainViewController = MainViewController()
+        let secondViewController = SecondViewController()
+        let firstNavigationController = UINavigationController(rootViewController: mainViewController)
+        let secondNavigationController = UINavigationController(rootViewController: secondViewController)
+        let thirdNavigationViewController = UINavigationController(rootViewController: ThirdNavigationViewController)
+        let tabBarController = UITabBarController()
+        tabBarController.setViewControllers([mainViewController, secondViewController, thirdNavigationViewController], animated: true)
+        self.window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
