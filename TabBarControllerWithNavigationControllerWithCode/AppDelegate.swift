@@ -18,9 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainViewController = MainViewController()
         let secondViewController = SecondViewController()
+        let thirdViewController = ThirdViewController()
         let firstNavigationController = UINavigationController(rootViewController: mainViewController)
         let secondNavigationController = UINavigationController(rootViewController: secondViewController)
-        let thirdNavigationViewController = UINavigationController(rootViewController: ThirdNavigationViewController)
+        let thirdNavigationViewController = UINavigationController(rootViewController: thirdViewController)
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers([mainViewController, secondViewController, thirdNavigationViewController], animated: true)
         self.window?.rootViewController = tabBarController
