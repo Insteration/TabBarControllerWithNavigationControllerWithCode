@@ -17,6 +17,7 @@ class SecondViewController: UIViewController {
         tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
         self.tabBarItem = tabBarItem
         self.view.backgroundColor = .yellow
+        
     }
     
 

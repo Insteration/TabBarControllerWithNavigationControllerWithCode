@@ -22,10 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let firstNavigationController = UINavigationController(rootViewController: mainViewController)
         let secondNavigationController = UINavigationController(rootViewController: secondViewController)
         let thirdNavigationViewController = UINavigationController(rootViewController: thirdViewController)
+        
+        let viewContoller = ViewController()
+        let fourthNavigationViewController = UINavigationController(rootViewController: viewContoller)
+        
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers([mainViewController, secondViewController, thirdNavigationViewController], animated: true)
+        tabBarController.setViewControllers([mainViewController, secondViewController, thirdNavigationViewController, fourthNavigationViewController], animated: true)
         self.window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
+        
         return true
     }
 
