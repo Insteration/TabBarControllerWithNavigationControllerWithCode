@@ -10,6 +10,7 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
+    var thirdTabBarItem = UITabBarItem()
     let switcher = UISwitch()
     let labelText = UILabel()
     let button = UIButton()
@@ -28,9 +29,8 @@ extension ThirdViewController {
     fileprivate func createThirdViewController() {
         // Third VC
         self.navigationItem.title = "Third View Controller"
-        var tabBarItem = UITabBarItem()
         tabBarItem = UITabBarItem(tabBarSystemItem: .mostRecent, tag: 2)
-        self.tabBarItem = tabBarItem
+        self.thirdTabBarItem = tabBarItem
         self.view.backgroundColor = .red
     }
     

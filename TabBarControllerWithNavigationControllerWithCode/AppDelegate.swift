@@ -16,16 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let mainViewController = FirstViewController()
+        let fristViewController = FirstViewController()
         let secondViewController = SecondViewController()
         let thirdViewController = ThirdViewController()
-        let firstNavigationController = UINavigationController(rootViewController: mainViewController)
+        let fourthviewContoller = FourthViewController()
+        let firstNavigationController = UINavigationController(rootViewController: fristViewController)
         let secondNavigationController = UINavigationController(rootViewController: secondViewController)
         let thirdNavigationViewController = UINavigationController(rootViewController: thirdViewController)
-        
-        let viewContoller = FourthViewController()
-        let fourthNavigationViewController = UINavigationController(rootViewController: viewContoller)
-        
+        let fourthNavigationViewController = UINavigationController(rootViewController: fourthviewContoller)
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers([firstNavigationController, secondNavigationController, thirdNavigationViewController, fourthNavigationViewController], animated: true)
         self.window?.rootViewController = tabBarController
