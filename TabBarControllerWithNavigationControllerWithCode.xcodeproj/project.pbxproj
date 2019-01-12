@@ -15,6 +15,7 @@
 		D9BC27A721E5F77800E66EE3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC27A621E5F77800E66EE3 /* FirstViewController.swift */; };
 		D9BC27A921E5F79800E66EE3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC27A821E5F79800E66EE3 /* SecondViewController.swift */; };
 		D9BC27AB21E5F8EB00E66EE3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC27AA21E5F8EB00E66EE3 /* ThirdViewController.swift */; };
+		D9E628C021EA072C004CD1A0 /* ThirdNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E628BF21EA072C004CD1A0 /* ThirdNextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D9BC27A621E5F77800E66EE3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D9BC27A821E5F79800E66EE3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D9BC27AA21E5F8EB00E66EE3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D9E628BF21EA072C004CD1A0 /* ThirdNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdNextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				D9BC279421E5F66700E66EE3 /* AppDelegate.swift */,
 				D9BC27AA21E5F8EB00E66EE3 /* ThirdViewController.swift */,
+				D9E628BF21EA072C004CD1A0 /* ThirdNextViewController.swift */,
 				D9BC27A821E5F79800E66EE3 /* SecondViewController.swift */,
 				D9BC27A621E5F77800E66EE3 /* FirstViewController.swift */,
 				D9BC279621E5F66700E66EE3 /* FourthViewController.swift */,
@@ -149,6 +152,7 @@
 				D9BC27AB21E5F8EB00E66EE3 /* ThirdViewController.swift in Sources */,
 				D9BC279721E5F66700E66EE3 /* FourthViewController.swift in Sources */,
 				D9BC279521E5F66700E66EE3 /* AppDelegate.swift in Sources */,
+				D9E628C021EA072C004CD1A0 /* ThirdNextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

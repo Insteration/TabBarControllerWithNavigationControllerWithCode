@@ -19,14 +19,7 @@ class ThirdViewController: UIViewController {
         createThirdViewController()
         createSwitch()
         createLabel()
-        
-        let buttonFrame = CGRect(x: 100, y: 0, width: 10, height: 30)
-        self.button.frame = buttonFrame
-//        self.button.backgroundColor = .green
-        self.button.setTitle("Back", for: .normal)
-        self.button.addTarget(self, action: #selector(buttonAction(param:)), for: .touchUpInside)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
-//        self.button.addSubview(button)
+        createButton()
     }
 
 }
@@ -46,7 +39,7 @@ extension ThirdViewController {
         // Switch
         self.switcher.isOn = false
         switcher.addTarget(self, action: #selector(switcherChange(param:)), for: .valueChanged)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: switcher)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: switcher)
     }
     
     fileprivate func createLabel() {
@@ -63,8 +56,16 @@ extension ThirdViewController {
         self.labelText.isHidden = true
         view.addSubview(labelText)
     }
-
     
+    fileprivate func createButton() {
+        // Bar Button Item
+        let buttonFrame = CGRect(x: 100, y: 0, width: 30, height: 30)
+        self.button.frame = buttonFrame
+        self.button.setTitle("Next VC ", for: .normal)
+        self.button.addTarget(self, action: #selector(buttonAction(param:)), for: .touchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
+    }
+
     @objc func switcherChange(param: UISwitch) {
         if param.isOn {
             self.labelText.isHidden = false
@@ -74,6 +75,6 @@ extension ThirdViewController {
     }
     
     @objc func buttonAction(param: UIButton) {
-        dismiss(animated: true, completion: nil)
+        self.navigationController?.pushViewController(ThirdNextViewController(), animated: true)
     }
 }
