@@ -14,10 +14,10 @@ class ThirdNextViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         createThirdNextViewController()
-        
-        
         createTextLabel()
+        
     }
 }
 
@@ -29,7 +29,7 @@ extension ThirdNextViewController {
     
     fileprivate func createTextLabel() {
         // Text label
-        self.textLabel.text = "Hi! You on nex ViewController"
+        self.textLabel.text = "Hi! You on next ViewController"
         self.textLabel.adjustsFontSizeToFitWidth = true
         self.textLabel.sizeToFit()
         self.textLabel.textColor = .black

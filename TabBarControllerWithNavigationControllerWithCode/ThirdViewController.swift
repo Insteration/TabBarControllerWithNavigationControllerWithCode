@@ -21,7 +21,6 @@ class ThirdViewController: UIViewController {
         createLabel()
         createButton()
     }
-
 }
 
 extension ThirdViewController {
