@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D97EF59721EA4423005F2E25 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97EF59621EA4422005F2E25 /* PopViewController.swift */; };
 		D9BC279521E5F66700E66EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC279421E5F66700E66EE3 /* AppDelegate.swift */; };
 		D9BC279721E5F66700E66EE3 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC279621E5F66700E66EE3 /* FourthViewController.swift */; };
 		D9BC279A21E5F66700E66EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BC279821E5F66700E66EE3 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D97EF59621EA4422005F2E25 /* PopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
 		D9BC279121E5F66700E66EE3 /* TabBarControllerWithNavigationControllerWithCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarControllerWithNavigationControllerWithCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BC279421E5F66700E66EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BC279621E5F66700E66EE3 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
@@ -63,10 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				D9BC279421E5F66700E66EE3 /* AppDelegate.swift */,
+				D97EF59621EA4422005F2E25 /* PopViewController.swift */,
+				D9BC27A621E5F77800E66EE3 /* FirstViewController.swift */,
+				D9BC27A821E5F79800E66EE3 /* SecondViewController.swift */,
 				D9BC27AA21E5F8EB00E66EE3 /* ThirdViewController.swift */,
 				D9E628BF21EA072C004CD1A0 /* ThirdNextViewController.swift */,
-				D9BC27A821E5F79800E66EE3 /* SecondViewController.swift */,
-				D9BC27A621E5F77800E66EE3 /* FirstViewController.swift */,
 				D9BC279621E5F66700E66EE3 /* FourthViewController.swift */,
 				D9BC279821E5F66700E66EE3 /* Main.storyboard */,
 				D9BC279B21E5F66700E66EE3 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97EF59721EA4423005F2E25 /* PopViewController.swift in Sources */,
 				D9BC27A921E5F79800E66EE3 /* SecondViewController.swift in Sources */,
 				D9BC27A721E5F77800E66EE3 /* FirstViewController.swift in Sources */,
 				D9BC27AB21E5F8EB00E66EE3 /* ThirdViewController.swift in Sources */,

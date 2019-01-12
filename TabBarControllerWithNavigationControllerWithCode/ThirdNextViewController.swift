@@ -14,7 +14,6 @@ class ThirdNextViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         createThirdNextViewController()
         createTextLabel()
         

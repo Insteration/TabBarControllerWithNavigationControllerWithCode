@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    let cityArray = ["Kyiv", "Dnipro", "Lviv", "Kharkov", "Odessa"]
+    let cityArray = ["Kyiv", "Dnipro", "Lviv", "Kharkov", "Odessa", "Khmelnitsky", "Poltava", "Zaporighie", "Chernovci", "Uzhgorod"]
     var tabSecondBarItem = UITabBarItem()
     let textLabel = UILabel()
     let pickerView = UIPickerView()
