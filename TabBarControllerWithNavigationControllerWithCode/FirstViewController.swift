@@ -8,12 +8,14 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class FirstViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Main View Controller"
         var tabBarItem = UITabBarItem()
+        
         tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         self.tabBarItem = tabBarItem
         self.view.backgroundColor = .green

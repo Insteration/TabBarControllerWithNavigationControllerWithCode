@@ -16,18 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let mainViewController = MainViewController()
+        let mainViewController = FirstViewController()
         let secondViewController = SecondViewController()
         let thirdViewController = ThirdViewController()
         let firstNavigationController = UINavigationController(rootViewController: mainViewController)
         let secondNavigationController = UINavigationController(rootViewController: secondViewController)
         let thirdNavigationViewController = UINavigationController(rootViewController: thirdViewController)
         
-        let viewContoller = ViewController()
+        let viewContoller = FourthViewController()
         let fourthNavigationViewController = UINavigationController(rootViewController: viewContoller)
         
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers([mainViewController, secondViewController, thirdNavigationViewController, fourthNavigationViewController], animated: true)
+        tabBarController.setViewControllers([firstNavigationController, secondNavigationController, thirdNavigationViewController, fourthNavigationViewController], animated: true)
         self.window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
         

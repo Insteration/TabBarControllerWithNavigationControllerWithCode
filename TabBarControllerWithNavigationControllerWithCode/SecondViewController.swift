@@ -8,13 +8,19 @@
 
 import UIKit
 
+
+
 class SecondViewController: UIViewController {
+    var tabSecondBarItem = UITabBarItem()
+
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Second View Controller"
         var tabBarItem = UITabBarItem()
-        tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+        tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
         self.tabBarItem = tabBarItem
         self.view.backgroundColor = .yellow
         
